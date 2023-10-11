@@ -9,7 +9,7 @@
 // ==/UserScript==
 
 const CAD = 16.5;
-const PRICE_ELEMENT_SELECTORS = ".price-container__price, .price-box__price";
+const PRICE_ELEMENT_SELECTORS = ".price-container__price, .price-box__price, .price-detail__without-vat-value";
 
 const getPriceNumber = (priceString) => Number(priceString.replace(/\s/g, "").slice(0, -2));
 const czkToCad = (priceInCzk) => Math.round(priceInCzk / CAD);
